@@ -58,6 +58,10 @@ body {
 .marketing p + h4 {
   margin-top: 28px;
 }
+.marketing p del {
+  font-size: 18px;
+  font-weight: bold;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
