@@ -49,8 +49,13 @@
             if (value.picked) {
               personsList.prepend('<p><del>' + value.name + '</del></p>');
             } else {
-              personsList.prepend('<p>' + value.name + '</p>');
+              personsList.prepend('<p class="free" data-id="' + index + '">' + value.name + '</p>');
             }
+          });
+
+          $('#personsList p.free').on('click', function () {
+            persons.splice($(this).data('id'), 1);
+            drawPersons();
           });
         }
 
