@@ -56,18 +56,18 @@ body {
 .marketing p + h4 {
   margin-top: 20px;
 }
-.marketing p del {
-  font-size: 18px;
+.marketing ul li del::after {
+  content: " PICKED!";
   font-weight: bold;
 }
 
-#personsList p.free:hover {
+ul#personsList > li.free:hover {
   font-weight: bold;
   color: red;
   cursor: pointer;
 }
 
-#personsList p.free:hover::after {
+ul#personsList > li.free:hover::after {
   content: " X";
   font-weight: bold;
   color: red;
